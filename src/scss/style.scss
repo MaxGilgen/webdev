@@ -1,0 +1,26 @@
+@import 'preset';
+
+// Tutorial Start
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	width: 90%;
+	padding: 2rem;
+	--yPos: 150px;
+	--xPos: 100px;
+	.card {
+		width: 20rem;
+		height: 15rem;
+		background: radial-gradient(
+			100rem circle at var(--xPos) var(--yPos),
+			rgba($ciBlue, 0.2),
+			transparent 15%
+		);
+		border-radius: 0.5rem;
+	}
+}
