@@ -1,0 +1,22 @@
+@import 'preset';
+
+// Tutorial Start
+
+.wrapper {
+	width: 100%;
+	aspect-ratio: 10/6;
+	position: relative;
+	.image {
+		position: absolute;
+		display: grid;
+		place-items: center;
+		width: 100%;
+		aspect-ratio: 10/6;
+		pointer-events: none;
+		transform-origin: center -150%;
+		img {
+			width: 33%;
+			border-radius: 1rem;
+		}
+	}
+}
